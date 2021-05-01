@@ -1,0 +1,41 @@
+@import '~mdb-ui-kit/css/mdb.min.css';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+
+
+.container {
+    margin-top: 1rem;
+    .top-card {
+        border-radius: 10px;
+        padding: 40px 0;
+        .card-body {
+            .form-control {
+                height: 43px;
+            }
+            #btn-search {
+                margin-top: 50px;
+                padding: 13px 0;
+            }
+            label {
+                color: #00000083;
+                font-size: 14px;
+            }
+        }
+    }
+    #card-main {
+        .card {
+            border: 1px solid #00000044;
+            padding-top: 8px;
+            .card-body {
+                .card-text {
+                    line-height: 2;
+                }
+            }
+            .card-footer {
+                .blockquote-footer {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
