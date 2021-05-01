@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top News</title>
+<link href="./assets/css/355.css" rel="stylesheet"><link href="./assets/css/files.css" rel="stylesheet"></head>
+
+<body>
+
+  <!-- EMAIL PANEL -->
+  <nav class="navbar bg-primary py-4">
+    <div class="container-fluid">
+      <h4 class="text-white">Search Top News by Name or Category or Country</h4>
+    </div>
+  </nav>
+  <br>
+  <!-- MAIN BOX -->
+  <div class="container">
+    <div class="card top-card border border-1">
+      <div class="card-title text-center"><h2 class="font-weight-bold">Search Top News</h2></div>
+      <div class="card-body w-75 mx-auto">
+        <div class="form-group">
+          <label>search by name</label>
+          <input type="text" id="name" class="form-control" placeholder="Search by Name" autocomplete="off">
+        </div>
+        <div class="select mt-3">
+          <label>country</label>
+          <select id="country-select" class="form-control form-select">
+            <option value="">--select--</option>
+            <option value="us">United States</option>
+            <option value="ca">Canada</option>
+            <option value="gb">United Kingdom</option>
+            <option value="de">Germany</option>
+            <option value="br">Brazil</option>
+            <option value="ar">Argantina</option>
+            <option value="ru">Russia</option>
+            <option value="cn">China</option>
+            <option value="au">Astralia</option>
+          </select>
+        </div>
+        <div class="select mt-3">
+          <label>category</label>
+          <select id="category-select" class="form-control form-select">
+            <option value="">--select--</option>
+            <option value="business">Business</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="general">General</option>
+            <option value="health">Health</option>
+            <option value="science">Science</option>
+            <option value="sports">Sports</option>
+            <option value="technology">Technology</option>
+          </select>
+        </div>
+        <button id="btn-search" class="btn btn-danger btn-block">Search</button>
+        <div id="message"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- news main -->
+  <div class="container"> 
+    <div class="row mt-3" id="card-main">
+    </div>
+  </div>
+
+  <br><br>
+
+<script src="./assets/js/bundle.js"></script><script src="./assets/js/355.js"></script><script src="./assets/js/files.js"></script></body>
+
+</html>
